@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Webiste</title>
+    <!-- cnd link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/732ef16564.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <!-- header -->
+    <header class="container mx-auto">
+        <div class="navbar bg-base-100 navbar-bg">
+            <div class="flex-1">
+                <a class="normal-case text-xl" href=""><span class="news-color p-2 mr-2">News</span> <span
+                        class="api-color">Webiste</span></a>
+            </div>
+            <div class="flex-none">
+                <div class="dropdown dropdown-end">
+                    <a class="header-right" href="">News</a>
+                    <a class="header-right ml-5" href="">Blog</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- API Nave -->
+        <ul id="menu-items" class="menu menu-item-color text-center w-full justify-between lg:flex-row ">
+
+        </ul>
+    </header>
+
+    <!-- News -->
+    <main class="container mx-auto">
+
+        <!--Found Result -->
+        <section>
+            <div class="foun-result bg-white my-5 p-5 rounded-lg">
+                <p class="text-[#000]"><span id="count">4</span> items found for category.</p>
+            </div>
+        </section>
+
+        <!-- filter -->
+        <section>
+            <div class="flex justify-between mt-8 mb-16 ">
+                <div class="flex items-center">
+                    <div>
+                        <h3 class="text-[#000] mr-3 font-medium">Sort By View:</h3>
+                    </div>
+                    <div>
+                        <select>
+                            <option value="">Default </option>
+                            <option value="">view</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <button class="btn bg-[#5D5FEF] mr-3 hover:bg-white hover:text-[#000]">Best View</button>
+                    </div>
+                    <div>
+                        <button class="btn bg-white hover:bg-[#5D5FEF] hover:text-white text-[#000]">Now Trand</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- loader -->
+        <div id="loader" class="lds-ring hidden">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!-- single news -->
+        <section id="show-id-news">
+        </section>
+
+        <!-- modal -->
+        <section>
+            <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+            <div class="modal modal-bottom sm:modal-middle">
+                <div id="modial-details" class="modal-box">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p></p>
+    </footer>
+
+    <!-- cdn script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
